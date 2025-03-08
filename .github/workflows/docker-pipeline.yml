@@ -6,4 +6,19 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World - 22IT015"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Docker Build
+        run: docker build -t jooo073/ml-model-22it015 .
+
+      - name: Docker Images
+        run: docker images
+  
+
+       
+
+
+        
       
